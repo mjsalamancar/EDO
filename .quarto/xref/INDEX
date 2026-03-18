@@ -1,20 +1,17 @@
 {
   "index.qmd": {
-    "index.html": "0b1742e3"
-  },
-  "intro.qmd": {
-    "intro.html": "199c9b0e"
-  },
-  "summary.qmd": {
-    "summary.html": "60a90d8a"
-  },
-  "references.qmd": {
-    "references.html": "d601a710"
-  },
-  "convergencia_pto.qmd": {
-    "convergencia_pto.html": "1feecb98"
+    "index.html": "d803c843"
   },
   "index1.qmd": {
-    "index1.html": "4b1573e3"
+    "index1.html": "7234c6e1"
+  },
+  "intro.qmd": {
+    "intro.html": "457d988d"
+  },
+  "references.qmd": {
+    "references.html": "7f46e078"
+  },
+  "summary.qmd": {
+    "summary.html": "95590484"
   }
 }

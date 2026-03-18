@@ -234,16 +234,16 @@ $$\sum a_n (x-x_0)^n = \sum b_n (x-x_0)^n \implies a_n = b_n$$
 
 Para cada uno de los ejercicios del 1 al 6, determine el Radio de Convergencia de las siguientes [power series]{style="color: blue;"}
 
-1. $\sum_{n=0}^\infty (x-3)^n$
+1-  $\quad \sum_{n=0}^\infty (x-3)^n$
 
-3. $\sum_{n=0}^\infty \frac{x^{2n}}{n!}$
+3- $\quad \sum_{n=0}^\infty \frac{x^{2n}}{n!}$
 
 En cada uno de los problemas 7 a 13, determine la Serie de Taylor en el punto $x_o$ para la función dada. Y también calcule el radio de convergencia de la serie.
 
 
-8.  $e^x, \quad x_o =0$
+8-  $\quad e^x, \quad x_o =0$
 
-10.  $x^2, \quad x_o =-1$
+10-    $\quad x^2, \quad x_o =-1$
 
 
 :::

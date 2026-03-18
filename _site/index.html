@@ -2905,15 +2905,11 @@ window.Quarto = {
 <section id="ejercicios" class="notebook-card">
 <h1>Ejercicios</h1>
 <p>Para cada uno de los ejercicios del 1 al 6, determine el Radio de Convergencia de las siguientes <span style="color: blue;">power series</span></p>
-<ol type="1">
-<li><p><span class="math inline">\(\sum_{n=0}^\infty (x-3)^n\)</span></p></li>
-<li><p><span class="math inline">\(\sum_{n=0}^\infty \frac{x^{2n}}{n!}\)</span></p></li>
-</ol>
+<p>1- <span class="math inline">\(\quad \sum_{n=0}^\infty (x-3)^n\)</span></p>
+<p>3- <span class="math inline">\(\quad \sum_{n=0}^\infty \frac{x^{2n}}{n!}\)</span></p>
 <p>En cada uno de los problemas 7 a 13, determine la Serie de Taylor en el punto <span class="math inline">\(x_o\)</span> para la función dada. Y también calcule el radio de convergencia de la serie.</p>
-<ol start="8" type="1">
-<li><p><span class="math inline">\(e^x, \quad x_o =0\)</span></p></li>
-<li><p><span class="math inline">\(x^2, \quad x_o =-1\)</span></p></li>
-</ol>
+<p>8- <span class="math inline">\(\quad e^x, \quad x_o =0\)</span></p>
+<p>10- <span class="math inline">\(\quad x^2, \quad x_o =-1\)</span></p>
 </section>
 </div>
 </div>
@@ -3013,7 +3009,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/mjsalamancar\.github\.io\/EDO\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
