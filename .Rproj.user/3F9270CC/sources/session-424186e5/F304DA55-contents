@@ -1,0 +1,254 @@
+---
+title: " 5.1 Repaso de Series de Potencias"
+format: 
+  html:
+    html-math-method: mathjax
+    self-contained: true
+    page-layout: article
+    toc: false
+    theme: none
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Outfit:wght@300;400;600&display=swap');
+
+          body { 
+            background-color: #fff0f5; 
+            background-image: radial-gradient(#ffb6c1 0.8px, transparent 0.8px); 
+            background-size: 20px 20px;
+            padding: 20px;
+            font-family: 'Outfit', sans-serif;
+            color: #5d4037;
+            overflow-x: hidden;
+          }
+
+          .cards-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 0;
+            scrollbar-width: none;
+            padding: 20px 0;
+          }
+          
+          .cards-slider::-webkit-scrollbar { display: none; }
+
+          /* Cada grupo ocupa el 100% del ancho de tu pantalla */
+          .page-group {
+            flex: 0 0 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            scroll-snap-align: center;
+            box-sizing: border-box;
+            padding: 0 40px;
+          }
+
+          .notebook-card {
+            flex: 0 0 45%; 
+            min-width: 400px;
+            max-width: 550px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
+            border-top: 12px solid #ff8da1;
+            position: relative;
+            min-height: 500px;
+          }
+
+          h1 { 
+            color: #d81b60; 
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600; 
+            border-bottom: 2px dashed #ffc1cc;
+            padding-bottom: 10px;
+          }
+
+          .back-btn-rose {
+            background-color: #ff8da1;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+          }
+
+          .btn-siguiente {
+            background-color: #ff8da1;
+            color: white !important;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+          
+          html { scroll-behavior: smooth; }
+        </style>
+---
+
+<a href="index.html" class="back-btn-rose"><i class="bi bi-arrow-left-short"></i> Regresar al índice</a>
+
+::::::::: cards-slider
+::::: {#grupo-1 .page-group}
+::: notebook-card
+# Maria José - Notebook
+
+![](vpunto3.jpg){fig-align="center" width="386"}
+:::
+
+::: notebook-card
+# Indíce
+
+![](convpto0.png){fig-align="center"}
+
+<a href="#grupo-2" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+
+::::: {#grupo-2 .page-group}
+::: notebook-card
+# Convergencia en un punto
+
+Una [power serie]{style="color: blue;"} $\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ si:
+
+$$\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n$$
+
+existe para ese $x$.
+
+<a href="#grupo-1" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Convergencia Absoluta
+
+Las [power series]{style="color: blue;"} convergen absolutamente si:
+
+$$\sum_{n=0}^{\infty} |a_n (x-x_0)^n| = \sum_{n=0}^{\infty} |a_n| |x-x_0|^n$$ 
+
+<a href="#grupo-3" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+::::: {#grupo-3 .page-group}
+::: notebook-card
+# Test de Convergencia absoluta
+Contenido del test aquí...
+
+<a href="#grupo-2" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Convergencia y Divergencia
+Análisis de comportamiento...
+
+<a href="#grupo-4" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+::::: {#grupo-4 .page-group}
+::: notebook-card
+# Radio e Intervalo de Convergencia
+$$\text{Radio } R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$$
+
+<a href="#grupo-3" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Suma y Resta de Series
+Operaciones entre series...
+
+<a href="#grupo-5" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+::::: {#grupo-5 .page-group}
+::: notebook-card
+# Multiplicación de Series
+
+Dadas dos [power series]{style="color: blue;"}, su producto de Cauchy se define como:
+$$\left( \sum a_n x^n \right) \left( \sum b_n x^n \right) = \sum_{n=0}^{\infty} c_n x^n$$
+donde $c_n = \sum_{k=0}^{n} a_k b_{n-k}$.
+
+<a href="#grupo-4" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Derivación de Series
+
+Si una serie tiene radio $R > 0$, se puede [derivar término a término]{style="color: blue;"} dentro de $(-R, R)$:
+$$\frac{d}{dx} \sum_{n=0}^{\infty} a_n (x-x_0)^n = \sum_{n=1}^{\infty} n a_n (x-x_0)^{n-1}$$
+
+<a href="#grupo-6" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+::::: {#grupo-6 .page-group}
+::: notebook-card
+# Series de Taylor
+
+Una función $f(x)$ suave se puede representar como:
+$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n$$
+¡No olvides el [factorial]{style="color: blue;"} en el denominador!
+
+<a href="#grupo-5" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Igualdad de Series
+
+Dos [power series]{style="color: blue;"} son iguales $\iff$ sus coeficientes son idénticos para todo $n$:
+$$\sum a_n (x-x_0)^n = \sum b_n (x-x_0)^n \implies a_n = b_n$$
+
+<a href="#grupo-7" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+:::
+:::::
+
+::::: {#grupo-7 .page-group}
+::: notebook-card
+# Ejemplos Interactivos
+
+* **Exponencial:** $e^x = \sum \frac{x^n}{n!}$
+* **Geométrica:** $\frac{1}{1-x} = \sum x^n$
+
+[Revisar convergencia en cada caso]{style="color: blue;"}.
+
+<a href="#grupo-6" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+:::
+
+::: notebook-card
+# Ejercicios 
+
+Para cada uno de los ejercicios del 1 al 6, determine el Radio de Convergencia de las siguientes [power series]{style="color: blue;"}
+
+1. $\sum_{n=0}^\infty (x-3)^n$
+
+3. $\sum_{n=0}^\infty \frac{x^{2n}}{n!}$
+
+En cada uno de los problemas 7 a 13, determine la Serie de Taylor en el punto $x_o$ para la función dada. Y también calcule el radio de convergencia de la serie.
+
+
+8.  $e^x, \quad x_o =0$
+
+10.  $x^2, \quad x_o =-1$
+
+
+:::
+:::::
+
+
+
+:::::::::
