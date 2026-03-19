@@ -199,9 +199,26 @@ Así puedo decir que:
 
 :::: {#p6 .page-group}
 ::: notebook-card
-# Radio e Intervalo de Convergencia
 
-$$\text{Radio } R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$$
+# Propiedad de Convergencia
+
+* Si la serie de potencias $\sum_{n=0}^{\infty} a_n (x - x_0)^n$ **converge** en $x = x_1$, entonces converge absolutamente para:
+    $$\bbox[#fff0f5, 5pt]{|x - x_0| < |x_1 - x_0|}$$
+
+* Si **diverge** en $x = x_1$, entonces diverge para:
+    $$|x - x_0| > |x_1 - x_0|$$
+
+<div style="text-align: center; margin: 20px 0; display: flex; align-items: center; justify-content: center; gap: 10px;">
+  <img src="https://i.pinimg.com/originals/8f/1a/5b/8f1a5bd59ba880167442d3220bce498f.gif" 
+       width="60px" 
+       height="60px" 
+       style="object-fit: cover; border-radius: 50%; mix-blend-mode: screen; opacity: 0.9; filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));">
+  
+  <span style="font-family: 'Quicksand', sans-serif; font-weight: 600; color: #ff8da1; font-size: 0.9em; letter-spacing: 0.5px; border-bottom: 2px solid #ffc1cc; padding-bottom: 3px;">
+    ¡Zona de Convergencia Absoluta!
+  </span>
+</div>
+
 
 <a href="#p5" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p7" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
