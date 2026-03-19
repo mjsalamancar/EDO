@@ -211,7 +211,7 @@ Así puedo decir que:
 <div style="text-align: center; margin: 30px 0; display: flex; flex-direction: column; align-items: center; justify-content: center;">
   
   <div style="background: transparent; width: 60px; height: 60px; overflow: hidden;">
-    <img src="https://i.pinimg.com/originals/8f/1a/5b/8f1a5bd59ba880167442d3220bce498f.gif" 
+    <img src="bolita.gif" 
          style="width: 100%; mix-blend-mode: screen; filter: brightness(1.2);">
   </div>
 
