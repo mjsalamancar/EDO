@@ -137,7 +137,7 @@ $$\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n$$
 
 existe para ese $x$.
 
-La serie con certeza converge para \$x=x_o\$ de ser así esta puede
+La serie con certeza converge para $x=x_o$ de ser así esta puede
 converger para todo $\forall$ x, o puede converger para algunos valores
 de $x$
 
