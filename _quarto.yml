@@ -1,14 +1,18 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
 
 website:
-  title: "" # Vacío para que no salga el nombre arriba
-  navbar: false # ¡ESTO QUITA LA BARRA DE ARRIBA!
-  sidebar: false # ¡ESTO QUITA EL MENÚ LATERAL!
+  title: ""
+  navbar: false
+  sidebar: false
 
 format:
   html:
     theme: none
-    css: estilos.css # Para que use tus estilos de siempre
+    css: estilos.css
     self-contained: true
