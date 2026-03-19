@@ -146,14 +146,14 @@ $$\sum_{n=0}^{\infty} |a_n (x-x_0)^n| = \sum_{n=0}^{\infty} |a_n| |x-x_0|^n$$
 ::::: {#grupo-3 .page-group}
 ::: notebook-card
 # Test de Convergencia absoluta
-Contenido del test aquí...
+
 
 <a href="#grupo-2" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
 :::
 
 ::: notebook-card
 # Convergencia y Divergencia
-Análisis de comportamiento...
+
 
 <a href="#grupo-4" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
 :::
@@ -169,7 +169,7 @@ $$\text{Radio } R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$$
 
 ::: notebook-card
 # Suma y Resta de Series
-Operaciones entre series...
+
 
 <a href="#grupo-5" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
 :::
@@ -202,7 +202,7 @@ $$\frac{d}{dx} \sum_{n=0}^{\infty} a_n (x-x_0)^n = \sum_{n=1}^{\infty} n a_n (x-
 
 Una función $f(x)$ suave se puede representar como:
 $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n$$
-¡No olvides el [factorial]{style="color: blue;"} en el denominador!
+
 
 <a href="#grupo-5" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
 :::
@@ -219,7 +219,7 @@ $$\sum a_n (x-x_0)^n = \sum b_n (x-x_0)^n \implies a_n = b_n$$
 
 ::::: {#grupo-7 .page-group}
 ::: notebook-card
-# Ejemplos Interactivos
+# Ejemplos 
 
 * **Exponencial:** $e^x = \sum \frac{x^n}{n!}$
 * **Geométrica:** $\frac{1}{1-x} = \sum x^n$
