@@ -146,7 +146,7 @@ existe para ese $x$.
 
 La serie con certeza converge para $x=x_o$ de ser así esta puede
 converger para todo $\forall$ x, o puede converger para algunos valores
-de $x$
+de $x$ y no para otros.
 
 <a href="#p2" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p4" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
@@ -157,9 +157,15 @@ de $x$
 ::: notebook-card
 # Convergencia Absoluta
 
-Las [power series]{style="color: blue;"} convergen absolutamente si:
+Las [power series]{style="color: blue;"} convergen absolutamente  en un punto $x$ si:
 
 $$\sum_{n=0}^{\infty} |a_n (x-x_0)^n| = \sum_{n=0}^{\infty} |a_n| |x-x_0|^n$$
+
+Estas dos anteriores [power series]{style="color: blue;"} convergen.
+
+### PROPIEDAD
+SI LAS [POWER SERIES]{style="color: blue;"} CONVERGEN DE MANERA ABSOLUTA, LUEGO LAS [POWER SERIES]{style="color: blue;"} CONVERGEN.
+(Pero el contrario no es necesariamente real!)
 
 <a href="#p3" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p5" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
