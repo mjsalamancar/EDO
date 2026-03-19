@@ -185,8 +185,11 @@ $$
 $$
 
 Así puedo decir que:
+
 -  Las power series convergen absolutamente en ese valor de x SÍ $|x - x_0|L < 1$
+
 -  Las power series divergen SÍ $|x - x_0|L > 1$.
+
 -  Pero si $|x - x_0|L = 1$ el TEST DE RADIO no concluye. 
 
 <a href="#p4" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
