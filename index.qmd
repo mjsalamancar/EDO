@@ -177,13 +177,17 @@ Estas dos anteriores [power series]{style="color: blue;"} convergen.
 # Test de Convergencia absoluta
 
 Uno de los test más útiles para la [Convergencia Absoluta]{style="color: pink;"} de una power serie, es el Radio Test.
-- Si $a_n \neq 0$ y sí para un valor fijo de x, tengo:
+
+-  Si $a_n \neq 0$ y sí para un valor fijo de x, tengo:
 
 $$
 \lim_{n \to \infty} \left| \frac{a_{n+1}(x - x_0)^{n+1}}{a_n(x - x_0)^n} \right| = |x - x_0| \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = |x - x_0|L
 $$
 
-
+Así puedo decir que:
+-  Las power series convergen absolutamente en ese valor de x SÍ $|x - x_0|L < 1$
+-  Las power series divergen SÍ $|x - x_0|L > 1$.
+-  Pero si $|x - x_0|L = 1$ el TEST DE RADIO no concluye. 
 
 <a href="#p4" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p6" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
