@@ -117,7 +117,7 @@ Regresar al índice</a>
 
 ::::: {#grupo-2 .page-group}
 ::: notebook-card
-# Convergencia en un punto
+# Convergencia en un punto (hooola)
 
 Una [power serie]{style="color: blue;"}
 $\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ si:
