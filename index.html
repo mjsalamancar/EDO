@@ -2606,16 +2606,21 @@ scroll-snap-align: center;
 box-sizing: border-box;
 }
 .notebook-card {
-width: 90%; 
+width: 90%;
 max-width: 600px;
 background: #ffffff;
-padding: 40px;
+padding: 40px 60px;
 border-radius: 20px;
 box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
 border-top: 12px solid #ff8da1;
 position: relative;
 min-height: 550px;
 margin: 10px;
+}
+@media(max-width: 480px){
+.notebook-card{
+padding: 40px 45px;
+}
 }
 h1 {
 color: #d81b60;
