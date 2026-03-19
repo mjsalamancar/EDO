@@ -37,25 +37,23 @@ format:
           .page-group {
             flex: 0 0 100%;
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centra la tarjeta única */
             align-items: flex-start;
-            gap: 30px;
             scroll-snap-align: center;
             box-sizing: border-box;
-            padding: 0 40px;
           }
 
           .notebook-card {
-            flex: 0 0 45%; 
-            min-width: 400px;
-            max-width: 550px;
+            width: 90%; /* Ajustado para mejor visualización individual */
+            max-width: 600px;
             background: #ffffff;
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(255, 182, 193, 0.2);
             border-top: 12px solid #ff8da1;
             position: relative;
-            min-height: 500px;
+            min-height: 550px;
+            margin: 10px;
           }
 
           h1 { 
@@ -79,7 +77,7 @@ format:
             font-weight: 600;
           }
 
-          .btn-siguiente {
+          .btn-nav {
             background-color: #ff8da1;
             color: white !important;
             width: 45px;
@@ -91,8 +89,10 @@ format:
             text-decoration: none;
             position: absolute;
             bottom: 20px;
-            right: 20px;
           }
+
+          .btn-next { right: 20px; }
+          .btn-prev { left: 20px; }
 
           html { scroll-behavior: smooth; }
         </style>
@@ -104,27 +104,31 @@ editor:
 <a href="index.html" class="back-btn-rose"><i class="bi bi-arrow-left-short"></i>
 Regresar al índice</a>
 
-:::::::::::::::::::::::: cards-slider
-::::: {#grupo-1 .page-group}
+::::::::::::::::::::: cards-slider
+:::: {#p1 .page-group}
 ::: notebook-card
-# Maria José - Notebook 
+# Maria José - Notebook
 
-![](vpunto3.jpg){fig-align="center" width="386"}
+![](vpunto3.jpg){fig-align="center" width="394"}
+
+<a href="#p2" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
+::::
 
+:::: {#p2 .page-group}
 ::: notebook-card
-# Indíce
+# Índice
 
-![](convpto0.png){fig-align="center"}
+![](convpto0.png){fig-align="center" width="487"}
 
-<a href="#grupo-2" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+<a href="#p1" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p3" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
-:::::
+::::
 
-::::: {#grupo-2 .page-group}
+:::: {#p3 .page-group}
 ::: notebook-card
-
-# Convergencia en un punto 
+# Convergencia en un punto
 
 Una [power serie]{style="color: blue;"}
 $\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ si:
@@ -133,9 +137,12 @@ $$\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n$$
 
 existe para ese $x$.
 
-<a href="#grupo-1" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p2" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p4" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
+::::
 
+:::: {#p4 .page-group}
 ::: notebook-card
 # Convergencia Absoluta
 
@@ -143,64 +150,46 @@ Las [power series]{style="color: blue;"} convergen absolutamente si:
 
 $$\sum_{n=0}^{\infty} |a_n (x-x_0)^n| = \sum_{n=0}^{\infty} |a_n| |x-x_0|^n$$
 
-<a href="#grupo-3" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+<a href="#p3" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p5" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
-:::::
+::::
 
-::::: {#grupo-3 .page-group}
+:::: {#p5 .page-group}
 ::: notebook-card
 # Test de Convergencia absoluta
 
-<a href="#grupo-2" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+*(Contenido pendiente)*
+
+<a href="#p4" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p6" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
+::::
 
-::: notebook-card
-# Convergencia y Divergencia
-
-<a href="#grupo-4" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
-:::
-:::::
-
-::::: {#grupo-4 .page-group}
+:::: {#p6 .page-group}
 ::: notebook-card
 # Radio e Intervalo de Convergencia
 
 $$\text{Radio } R = \lim_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$$
 
-<a href="#grupo-3" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p5" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p7" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
+::::
 
-::: notebook-card
-# Suma y Resta de Series
-
-<a href="#grupo-5" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
-:::
-:::::
-
-::::: {#grupo-5 .page-group}
-::: notebook-card
-# Multiplicación de Series
-
-<a href="#grupo-4" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
-:::
-
-::: notebook-card
-# Derivación de Series
-
-<a href="#grupo-6" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
-:::
-:::::
-
-::::: {#grupo-6 .page-group}
+:::: {#p7 .page-group}
 ::: notebook-card
 # Series de Taylor
 
 Una función $f(x)$ suave se puede representar como:
 $$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n$$
 
-<a href="#grupo-5" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p6" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p8" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
+::::
 
+:::: {#p8 .page-group}
 ::: notebook-card
 # Igualdad de Series
 
@@ -208,34 +197,29 @@ Dos [power series]{style="color: blue;"} son iguales $\iff$ sus
 coeficientes son idénticos para todo $n$:
 $$\sum a_n (x-x_0)^n = \sum b_n (x-x_0)^n \implies a_n = b_n$$
 
-<a href="#grupo-7" class="btn-siguiente"><i class="bi bi-arrow-right-short"></i></a>
+<a href="#p7" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
+<a href="#p9" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
-:::::
+::::
 
-::::: {#grupo-7 .page-group}
-::: notebook-card
-# Ejemplo 5.1.3
-
-<a href="#grupo-6" class="btn-siguiente" style="right: auto; left: 20px;"><i class="bi bi-arrow-left-short"></i></a>
-:::
-
+:::: {#p9 .page-group}
 ::: notebook-card
 # Ejercicios
 
 Para cada uno de los ejercicios del 1 al 6, determine el Radio de
-Convergencia de las siguientes [power series]{style="color: blue;"}
+Convergencia:
 
 1- $\quad \sum_{n=0}^\infty (x-3)^n$
 
 3- $\quad \sum_{n=0}^\infty \frac{x^{2n}}{n!}$
 
-En cada uno de los problemas 7 a 13, determine la Serie de Taylor en el
-punto $x_o$ para la función dada. Y también calcule el radio de
-convergencia de la serie.
+Determine la Serie de Taylor en $x_o$:
 
 8- $\quad e^x, \quad x_o =0$
 
 10- $\quad x^2, \quad x_o =-1$
+
+<a href="#p8" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 :::
-:::::
-::::::::::::::::::::::::
+::::
+:::::::::::::::::::::
