@@ -109,7 +109,7 @@ Regresar al índice</a>
 ::: notebook-card
 # Maria José - Notebook
 
-![](vpunto3.jpg){fig-align="center" width="394"}
+![](vpunto3.jpg){fig-align="left" width="394"}
 
 <a href="#p2" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
 :::
@@ -119,7 +119,7 @@ Regresar al índice</a>
 ::: notebook-card
 # Índice
 
-![](convpto0.png){fig-align="center" width="487"}
+![](convpto0.png){fig-align="left" width="487"}
 
 <a href="#p1" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p3" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
@@ -131,11 +131,15 @@ Regresar al índice</a>
 # Convergencia en un punto
 
 Una [power serie]{style="color: blue;"}
-$\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ si:
+$\sum_{n=0}^{\infty} a_n (x-x_0)^n$ converge en un punto $x$ sí:
 
 $$\lim_{m \to \infty} \sum_{n=0}^{m} a_n (x-x_0)^n$$
 
 existe para ese $x$.
+
+La serie con certeza converge para \$x=x_o\$ de ser así esta puede
+converger para todo $\forall$ x, o puede converger para algunos valores
+de $x$
 
 <a href="#p2" class="btn-nav btn-prev"><i class="bi bi-arrow-left-short"></i></a>
 <a href="#p4" class="btn-nav btn-next"><i class="bi bi-arrow-right-short"></i></a>
