@@ -107,7 +107,7 @@ Regresar al índice</a>
 :::::::::::::::::::::::: cards-slider
 ::::: {#grupo-1 .page-group}
 ::: notebook-card
-# Maria José - Notebook buajajja
+# Maria José - Notebook 
 
 ![](vpunto3.jpg){fig-align="center" width="386"}
 :::
